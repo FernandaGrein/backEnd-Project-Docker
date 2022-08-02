@@ -8,7 +8,6 @@ function ItemAdd() {
   const { addTask } = useContext(TaskContext);
 
   const handleAdd = async () => addTask(description);
-  // .
 
   return (
     <div className="item-add">
