@@ -10,10 +10,6 @@ ADD node_modules.tar.gz /app/
 
 COPY . /app/
 
-ENV FRONT_HOST=localhost
-
-ENV FRONT_PORT=3000
-
 ENTRYPOINT [ "npm" ]
 
 CMD [ "test" ]
