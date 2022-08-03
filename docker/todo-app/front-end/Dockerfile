@@ -10,9 +10,9 @@ ADD node_modules.tar.gz /app/
 
 COPY . /app/
 
-ENV FRONT_HOST=localhost
+ENV REACT_APP_API_HOST=localhost
 
-ENV FRONT_PORT=3000
+ENV REACT_APP_API_PORT=3001
 
 EXPOSE 3000
 
