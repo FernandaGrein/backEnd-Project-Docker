@@ -2,7 +2,7 @@ FROM node:14-alpine AS todofrontend
 
 WORKDIR /front
 
-COPY package*.json .
+ADD node_modules.tar.gz .
 
 COPY . .
 
