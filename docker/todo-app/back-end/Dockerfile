@@ -2,13 +2,9 @@ FROM node:14-alpine AS todobackend
 
 WORKDIR /app
 
-COPY package*.json /app/
+ADD node_modules.tar.gz .
 
-RUN npm install
-
-ADD node_modules.tar.gz /app/
-
-COPY . /app/
+COPY . .
 
 EXPOSE 3001
 
