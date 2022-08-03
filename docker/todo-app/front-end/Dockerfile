@@ -1,14 +1,14 @@
 FROM node:14-alpine AS todofrontend
 
-WORKDIR /app
+WORKDIR /front
 
-COPY package*.json /app/
+COPY package*.json /front/
 
 RUN npm install
 
-ADD node_modules.tar.gz /app/
+ADD node_modules.tar.gz /front/
 
-COPY . /app/
+COPY . /front/
 
 EXPOSE 3000
 

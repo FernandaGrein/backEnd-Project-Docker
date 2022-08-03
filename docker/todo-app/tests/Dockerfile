@@ -1,14 +1,14 @@
 FROM mjgargani/puppeteer:trybe1.0 AS todotests
 
-WORKDIR /app
+WORKDIR /test
 
-COPY package*.json /app/
+COPY package*.json /test/
 
 RUN npm install
 
-ADD node_modules.tar.gz /app/
+ADD node_modules.tar.gz /test/
 
-COPY . /app/
+COPY . /test/
 
 ENTRYPOINT [ "npm" ]
 
